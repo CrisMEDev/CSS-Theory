@@ -1,0 +1,26 @@
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.contact-form {
+
+    /* Como este es el contenedor y el h2 es un hijo
+    al usar em este sería 20pixeles */
+    font-size: 15px;
+    color: white;
+
+    background-color: black;
+
+    width: 50vw;
+    height: 75vh;
+    
+}
+
+.contact-form__h2 {
+    font-size: 5em; /* 100px debido a la clase de arriba */
+}
+
+
+

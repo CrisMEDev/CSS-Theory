@@ -111,4 +111,19 @@ Ej:
 </div>
 ```
 
+## Unidades de medida
 
+Existen dos tipos, fijas y relativas.
+
+Fijas:
+- px -> pixeles
+- cm -> centímetros
+- mm -> milímetros
+- pt -> puntos
+
+Relativas:
+- rem   (Trabaja en base al root)
+- em    1em === 16px generalmente pero el navegador lo puede interpretar a su antojo
+        de manera general, 1em === al valor que se le da a la caja contenedora
+- vw    (viewport width)    Ocupa el ancho de la pantalla
+- vh    (viewport height)   Ocupa el alto de la pantalla
