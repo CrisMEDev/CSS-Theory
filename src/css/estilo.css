@@ -1,0 +1,27 @@
+* {
+    color: #808080;
+}
+
+p {
+    color: #0000ff;
+}
+
+.miClase {
+    color: #006400;
+}
+
+#pId1 {
+    color: #8b008b;
+}
+
+[miAtributo="Hola"]{
+    color: #ff8c00;
+}
+
+h2 p {
+    color: #cd5c5c;
+}
+
+h3:hover {
+    color: #adff2f;
+}
