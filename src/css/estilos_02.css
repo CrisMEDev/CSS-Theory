@@ -1,0 +1,26 @@
+
+h1 {
+    color: blue;
+}
+
+.color-green {
+    color: blue;
+}
+
+h1 {
+    color: grey !important; /* Esto es un important */
+}
+
+#color-red {
+    color: red;
+}
+
+/* Selecciona el primer elemendo del contenedor que cumpla con el nombre de la clase */
+.contact-form__input:first-child {
+    border-color: green;
+}
+
+/* Se puede agregar doble guión seguido de active para indicar un elemento que resalta de los demas */
+.contact-form__input--active {
+    border-color: red;
+}

@@ -59,3 +59,56 @@ h3:hover {
 }
 ```
 
+## Especificidad
+
+El orden de prioridad que se le da al aplicado de estilos tiene importancia según como se seleccionen
+los elemetos, el ejemplo de abajo muestra el orden de prioridad de manera descendente.
+
+El ( !important ) es una palabra reservada en CSS y tiene más prioridad en todos los estilos
+El estilo de linea es cuanto se usa el atributo style en la etiqueta
+
+- !important
+- estilos en línea
+- identificadores
+- clases, pseudo clases, atributos
+- elementos, pseudo elementos
+
+
+## Metodología BEM
+
+Para trabajar con la metodología BEM basta con usar el nombre del contenedor
+para nombrar la clase del elemento seguido de dos guines bajos más el nombre del elemento
+
+Para diferenciar un elemento del resto, se puede usar al final de la clase un doble guión
+seguido de una palabra significativa para la clase. En el ejemplo de abajo se resalta el segundo input
+
+Ej:
+
+```
+<div class="contact-form">
+
+    <input type="text" class="contact-form__input">
+    <input type="text" class="contact-form__input--active">
+    <input type="text" class="contact-form__input">
+    <input type="text" class="contact-form__input">
+    <input type="password" class="contact-form__input">
+        
+</div>
+```
+
+En el caso de múltiples elementos anidados se usa la nomenclatura anterior y se concatenan los
+elementos descendentes con un '-' hasta llegar al deseado.
+
+Ej:
+
+```
+<div class="suscriber-form">
+    <p class="suscriber-form__p">
+        <h4 class="suscriber-form__p-h4">
+            Hola mundo
+        </h4>
+    </p>
+</div>
+```
+
+
