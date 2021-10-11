@@ -156,3 +156,10 @@ Hay dos tipos
 - En bloque: Se ajustan al ancho del contenedor como el caso de la etiqueta h1
 
 Con CSS se puede pasar de un elemento en línea a uno en bloque y viceversa
+
+Box Model: Está compuesto por 4 propiedades
+
+- content: modificado por line-height
+- padding: modificado por padding y su variantes individuales
+- border: modificado por border
+- margin: modificado por margin y su variantes individuales

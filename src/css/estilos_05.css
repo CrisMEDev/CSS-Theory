@@ -1,0 +1,38 @@
+* {
+    font-family: 'Lobster', cursive;
+    color: black;
+    font-weight: 100;
+    font-size: 30px;
+}
+
+h2 {
+    background-color: #a22;
+
+    /* Toma el comportamiento de un elemento en línea pero usa propiedades como bloque  */
+    display: inline-block;
+
+    /* El espacio entre el contenido y la caja es lo que se conoce como padding */
+    padding: 20px 30px 50px 70px;
+    height: 100px;
+    width: 300px;
+
+    box-sizing: border-box;
+
+    /* El espacio entre las cajas se conoce como margin */
+    margin: 10px;
+
+    border-radius: 10px;
+
+    /* Para aplicar multiples estilos al borde con el shorhand usar
+       border: unidad tipo(solid dashed double groove ridge inset outset) color
+    */
+    border: 5px solid #a22;
+
+    box-shadow: 2px 4px 15px #000;  /* x y difuminado border color*/
+    
+    /* Para duplicar la intesidad se puede separar por coma y usar el mismo estilo como a continuación */
+    text-shadow: 2px 2px 7px #fff, 2px 2px 7px #fff; /* Como el box-shadow pero sin border */
+
+    transform: rotate( 10deg ); /* rota 10 grados el elemento */
+}
+
