@@ -1,0 +1,23 @@
+* {
+    font-family: 'Lobster', cursive;
+    color: black;
+    font-weight: 100;
+    font-size: 30px;
+}
+
+.caja1 {
+    width: 200px;
+    height: 200px;
+    background: #a22;
+    margin: auto;   /* Centra un elemento bloque en horizontal */
+    
+    /* border: 10px solid blue; */
+    outline: 10px solid blue; /* Es como el border pero no ocupa espacio en el DOM; su objetivo es resaltar elementos */
+}
+
+.caja2 {
+    width: 200px;
+    height: 200px;
+    background: green;
+    margin: auto;
+}
