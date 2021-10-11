@@ -1,0 +1,30 @@
+
+* {
+    font-family: 'Lobster', cursive;
+    color: black;
+}
+
+.contact-form {
+    font-size: 25px;
+}
+
+.contact-form__h2 {
+    font-size: 2em;
+
+    /* Lineheight nace del centro de la letra por tanto
+       un line-height = 0.5 del centro de la letra arriba y 0.5 hacia abajo
+     */
+    line-height: 2;
+
+    font-weight: 100;
+
+
+}
+
+/*
+Por defecto los elementos tienen un display: block;
+Algunos elementos permiten el resize con width y height
+*/
+.cajas {
+    display: inline;    /* Para que se comporten como elementos en línea */
+}

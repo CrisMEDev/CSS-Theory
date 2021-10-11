@@ -127,3 +127,32 @@ Relativas:
         de manera general, 1em === al valor que se le da a la caja contenedora
 - vw    (viewport width)    Ocupa el ancho de la pantalla
 - vh    (viewport height)   Ocupa el alto de la pantalla
+
+## Normalize
+
+Los siguientes son agregados al archivo de normalize
+
+Para que los contenedores no se redimensionen, usar lo siguiente
+
+```
+ * {
+   box-sizing: border-box;
+ }
+```
+
+Para que el ajuste de las imágenes en los navegadores sea de acuerdo a la pantalla
+```
+img {
+    border-style: none;
+    max-width: 100%;
+  }
+```
+
+## Cajas
+
+Hay dos tipos
+
+- En línea: Se ajustan a su contenido como en es caso de la etiqueta b
+- En bloque: Se ajustan al ancho del contenedor como el caso de la etiqueta h1
+
+Con CSS se puede pasar de un elemento en línea a uno en bloque y viceversa
