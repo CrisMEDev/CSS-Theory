@@ -163,3 +163,23 @@ Box Model: Está compuesto por 4 propiedades
 - padding: modificado por padding y su variantes individuales
 - border: modificado por border
 - margin: modificado por margin y su variantes individuales
+
+**Outline:** Permite resaltar elementos del DOM pero a diferencia de border no ocupa espacios
+
+Position: Permite adquirir nuevas propiedades (top, left, right, bottom) a los elementos, hay varios tipos
+
+top y left tienen mayor priodidad que sus opuestos bottom y right
+
+- static: valor por defecto que adquieren los elementos
+- relative: Permite a los elementos ajustaralos a partir de la posicion en donde estan sin afectar a los demas
+- absolute: Permite a los elementos ajustaralos a partir de la posicion absoluta desde el contenerdor donde
+            se encuentre el elemento, si se usan las propiedades como top y right, se usará el viewport del navegador
+            el tamaño de la caja se ajusta al contenido
+- fixed: Es como absolute pero la diferencia es que el elemento queda fijado tras usar el scroll
+- sticky: Es como fixed solo que el espacio en el DOM lo conserva (define a partir de que lugar en el DOM un elemento se comportará
+          como fixed)
+
+**Z index:** ordena a los elementos en el eje Z, es recomendable usar valores altos como 10 en 10 o
+100 en 100 para el caso en el que se necesiten poner elementos entre ellos
+
+
