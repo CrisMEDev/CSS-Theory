@@ -1,0 +1,35 @@
+
+* {
+    font-family: 'Lobster', cursive;
+    color: black;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    height: 100vh;
+    align-items: baseline;
+}
+
+.flex-item {
+    background-color: #248;
+    color: #fff;
+    margin: 5px;
+    height: 120px;
+    width: 120px;
+    min-width: 80px;
+    text-align: center;
+}
+
+.prop {
+    background: orangered;
+}
+
+.prop2 {
+    background: #000;
+}

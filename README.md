@@ -254,7 +254,69 @@ se pueden ver cambio visuales pero no afectan al DOM
 **cursor:** modifica el estilo del cursor
 [cursor styles](https://www.w3schools.com/cssref/tryit.asp?filename=trycss_cursor)
 
+## Flexbox
 
+*<ins>Propiedades de los containers:</ins>*
+
+Es de las nuevas maneras en las que se maqueta en la actualidad.
+Un container con display flex consta de 2 ejes main-axis(eje x) y cross axis(eje y)
+Todos los elementos directos (hijos) dentro de un flex se conocen como flex-item
+
+**flex-direction:** propiedad que se aplica al contenedor pero afecta al item
+
+- row valor por defecto, alineamiento horizontal
+- row-reverse alineamiento horizontal invertido
+- column alineamiento vertical
+- column-reverse alineamiento vertical invertido
+
+**flex-wrap:** propiedad que permite cambiar el comportamiento de los flex-item
+
+- wrap mantener las dimensiones del flex-item
+- no-wrap comportamiento por defecto
+- wrap-reverse el comportamiento inverso a wrap
+
+**flex-flow:** es un shorhand para flex-direction y flex-wrap. Se usa como sigue
+
+- flex-flox: row wrap;
+
+**justify-content:** permite ajustar los flex-items en el contenedor sobre el MAIN AXIS
+
+- center centra el contenido
+- space-around deja un margen igual entre cada flex-item
+- space-between deja la mayor cantidad de espacio entre las cajas
+- space-evenly la separacion entre las cajas y el contenedor es la misma
+
+**align-items** permite ajustar los flex-items en el contenedor sobre el CROSS AXIS cuando hay UNA linea de items
+**align-content** permite ajustar los flex-items en el contenedor sobre el CROSS AXIS cuando hay MAS DE UNA linea de items
+
+- center centra los items sobre cross axis
+- flex-start mantiene el tamaño del item en base al contenido a diferencia de stretch
+- flex-end pasa los items al final
+- stretch propiedad por defecto, se estira a lo largo del CROSS-AXIS
+- baseline usado en conjunto a WRAP-REVERSE para poner los elementos en la parte baja ya que flex-end no funciona
+
+*<ins>Propiedades de los items</ins>*
+
+**align-self:** funciona sobre el cross axis y tiene las mismas propiedades que align-items
+
+**margin** se va al lado contrario del especificado. Si se combina con so homólogo en auto (Ej: top y bottom en auto)
+centra de manera vertical, solo funciona cuando hay un contenedor
+
+- top: se va hacia la parte más baja del container
+
+**flex-grow** recibe un entero y lo usa para calcular el tamaño sobrante de el item o items y asignarlo de manera proporcional al entero.
+
+Si hay 3 cajas y a todas se les aplica un flex-grow de 1 entonces todas las cajas se estiran sobre el main axis de manera igual pero al ir reduciendo la resolucion se quedan en su wodt especificado.
+
+Lo que se hace en general es SUMAR TODOS LOS FLEX-GROW y dividirlos con el espacio sobrante para despues repartirlos de manera proporcional
+
+**flex-shrink:** permite a las algunas cajas ceder más espacio cuando no alcance el lugar disponible para que traten de mantener su resolucion especificada, usar CERO significa que no debe ceder espacio
+
+**flex-basis:** Es como el width pero tiene un nivel de prioridad más alto
+
+**flex:** shorthand para grow, shrink, basis en ese orden
+
+**order:** sirve para posicionar los elementos en base a numeros enteros, entre más alto más al final del cross axis se va
 
 
 
