@@ -1,0 +1,33 @@
+
+* {
+    font-family: 'Lobster', cursive;
+    color: black;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+div {
+    width: 45%;
+    display: inline-block;
+    padding: 20px;
+    background: #ddd;
+}
+
+h2 {
+    font-size: 40px;
+    margin: 20px;
+}
+
+.caja2 {
+    background: #bbb;
+}
+
+/*
+Cuando la pantalla sea de menos de 800px se realiza la accion
+*/
+@media only screen and (max-width: 800px) {
+    div {
+        display: block;
+        width: 100%;
+    }
+}
