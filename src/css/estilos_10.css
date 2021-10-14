@@ -1,0 +1,115 @@
+
+* {
+    font-family: 'Lobster', cursive;
+    color: black;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+.nav__responsive-ul {
+    display: none;
+}
+
+.nav {
+    background-color: #26a;
+}
+
+.nav__li {
+    display: inline-block;
+    padding: 12px;
+}
+
+.nav__li:hover > a {    /* Aplica un hover al elemento a dentro de nav__li */
+    color: #bbb;
+}
+
+.nav__li:hover > i {    /* Aplica un hover al elemento i dentro de nav__li */
+    color: #bbb;
+}
+
+.nav__li a, i {
+    color: #fff;
+    text-decoration: none;  /* elimina subrayado */
+}
+
+.nav__li i {
+    box-sizing: border-box;
+    text-align: center;
+    margin-right: 5px;
+}
+
+.nav__responsive-li {
+    width: 100%;
+    padding: 10px 20px;
+}
+
+.nav__responsive-li i {
+    box-sizing: border-box;
+    text-align: center;
+    margin-right: 5px;
+    width: 30px;
+    color: #016;
+}
+
+.nav__responsive-li a {
+    text-decoration: none;
+    color: #016;
+}
+
+.nav__responsive-btn-container {
+    position: absolute;
+    width: 100%;
+    font-size: 25px;
+    background: #69c;
+    margin-top: -35px;
+    z-index: 100;
+}
+
+.nav__responsive-btn {
+
+    padding: 6px 20px;
+    text-align: right;
+    width: 100%;
+
+}
+
+.nav__li-container {
+    position: relative;
+    top: -1000px;
+    height: calc(100vh - 35px);
+    background-color: #7af;
+    width: 75%;
+
+    transition: all 1s;
+    z-index: 1;
+}
+
+
+
+/* Para trabajar con resoluciones por debajo de los 520 pixeles */
+@media only screen and (max-width: 520px){
+
+    .nav__ul {
+        display: none;
+    }
+
+    .nav__responsive-ul {
+        display: block;
+        position: absolute;
+        width: 100%;
+        margin-top: 35px;
+        height: 35px;
+    }
+
+    .nav {
+        height: 35px;
+        width: 100%;
+
+        background-color: #26a;
+    }
+
+    .nav__responsive-ul:hover > .nav__li-container {
+        top: -35px;
+    }
+
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Para tomar las resoluciones originales de el dispositivo en uso -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Normalize -->
+    <link rel="stylesheet" href="./src/css/normalize.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./src/css/estilos_10.css">
+
+    <title>Responsive design menu</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="nav">
+            <ul class="nav__ul">
+                <li class="nav__li"><i class="fas fa-home"></i><a href="#">Inicio</a></li>
+                <li class="nav__li"><i class="fas fa-user-friends"></i><a href="#">Sobre nosotros</a></li>
+                <li class="nav__li"><i class="fas fa-dollar-sign"></i><a href="#">Juega gratis</a></li>
+                <li class="nav__li"><i class="fas fa-question-circle"></i><a href="#">Ayuda</a></li>
+            </ul>
+
+            <ul class="nav__responsive-ul">
+
+                <div class="nav__responsive-btn-container">
+                    <div class="nav__responsive-btn fas fa-bars"></div>
+                </div>
+
+
+                <div class="nav__li-container">
+                    <li class="nav__responsive-li"><i class="fas fa-home"></i><a href="#">Sobre nosotros</a></li>
+                    <li class="nav__responsive-li"><i class="fas fa-user-friends"></i><a href="#">Inicio</a></li>
+                    <li class="nav__responsive-li"><i class="fas fa-dollar-sign"></i><a href="#">Ayuda</a></li>
+                    <li class="nav__responsive-li"><i class="fas fa-question-circle"></i><a href="#">Juega gratis</a></li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+</body>
+
+</html>
