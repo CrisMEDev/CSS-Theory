@@ -166,7 +166,7 @@ Box Model: Está compuesto por 4 propiedades
 
 **Outline:** Permite resaltar elementos del DOM pero a diferencia de border no ocupa espacios
 
-Position: Permite adquirir nuevas propiedades (top, left, right, bottom) a los elementos, hay varios tipos
+**Position:** Permite adquirir nuevas propiedades (top, left, right, bottom) a los elementos, hay varios tipos
 
 top y left tienen mayor priodidad que sus opuestos bottom y right
 
@@ -181,5 +181,81 @@ top y left tienen mayor priodidad que sus opuestos bottom y right
 
 **Z index:** ordena a los elementos en el eje Z, es recomendable usar valores altos como 10 en 10 o
 100 en 100 para el caso en el que se necesiten poner elementos entre ellos
+
+**display:** modifica el comportamiento de las cajas a diferencia de position que modifica la interaccion entre las cajas
+
+- block: elementos como div, h1 son tipo block
+- inline: usadas para textos por lo general
+
+- inline-block: adopta las propiedades de block e inline para poder modificar las dimensiones de la caja
+
+Las siguientes 6 ya no se usan
+- table
+- inline-table
+- list-item
+- table-cell-
+- table-row
+- table-column
+
+- grid
+- flex
+
+- inline-grid
+- inline-flex
+
+**overflow:** es la barra para hacer scroll en un contenido, por defecto es visible
+              esta propiedad ayuda a mantener las imagenes en su contenedor, por ejemplo
+
+- visible: valor por defecto
+- auto: para poder hacer scroll dentro de la caja del contenido
+- scroll: pone la barra scrolleable aunque no se requiera
+- hidden: oculta la barra scroll y limita el contenido a lo que alcance
+
+**float:** se usaba en técnicas antiguas para ajustar elementos en el DOM, ahora es más usado grid y flex
+            ahora es útil en los casos en los que se desea crear contenedores de TEXTO e IMÁGENES
+
+- right
+- left
+
+**pseudo-elementos:** Son un tipo de elementos pero a diferencia de los reales no forman parte del DOM,
+se pueden ver cambio visuales pero no afectan al DOM
+
+- ::first-line | funcioan en block, primara linea de un texto
+- ::first-letter | funcioan en block, primera letra del texto
+- ::placeholder, en los inputs modifica el estilo del placeholder
+- ::after | funciona en hijos - content necesario - son elementos inline
+- ::before | funciona en hijos - content necesario - son elementos inline
+- ::selection para cuando un usuario selecciona algo, este estilo lo modifica el CSS
+
+**pseudo-clases:** escuchan un evento y actuan de acuerdo a lo aplicado en cierto elemento
+
+- :hover escucha el evento cuando el mouse esta encima
+- :link cambia las propiedades cuando el enlace ya fue visitado
+- :visited: aplica los estilos mientras el enlace no sea visitado
+- :active aplica los efectos mientras se clicke o seleccione el elemento
+- :focus aplica los estilus cuando un input esta enfocado
+- :lang aplica los estilos dependiendo del lenguage pasado como argumento
+
+**object-fit:** aplicado generalmente a las imágenes
+
+- contain valor por defecto, las resoluciones se ajustan al contenido
+- fill
+- cover ajusta la imagen al contenedor manteniendo las resoluciones
+- none agranda la imagen a la resolución que tiene que ser de acuerdo a su caja
+- scale-down compara none y contain y se queda con la menor resolución
+
+**object-position:** permite mover la imgen dentro del contenedor
+
+- top
+- bottom
+- left
+- right
+
+**cursor:** modifica el estilo del cursor
+[cursor styles](https://www.w3schools.com/cssref/tryit.asp?filename=trycss_cursor)
+
+
+
+
 
 

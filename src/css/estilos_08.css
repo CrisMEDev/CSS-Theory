@@ -1,0 +1,165 @@
+
+* {
+    font-family: 'Lobster', cursive;
+    color: black;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+.img-container {
+    border: 5px solid green;
+    background: grey;
+    margin: auto;
+    margin-top: 50px;
+    width: 50%;
+    padding: 20px;
+}
+
+.img-container img {
+    float: right;
+    width: 400px;
+    margin-right: 18px;
+}
+
+b {
+    background: blue;
+    margin: 10px;
+    border: 5px solid red;
+    width: 250px;
+    height: 200px;
+    display: inline-block;
+}
+
+span {
+    display: inline-block;
+    margin: 20px;
+    width: 100%;
+    height: 100px;
+}
+
+.class-overflow {
+    margin: auto;
+    margin-top: 50px;
+    padding: 15px;
+    width: 320px;
+    height: 350px;
+    border: 4px solid red;
+    background: grey;
+    
+    overflow: auto;
+}
+
+/* pseudo elementos */
+.texto {
+    padding: 20px;
+}
+
+.texto::first-line {
+    color: blue;
+}
+
+.texto::first-letter {
+    font-size: 30px;
+    color: red;
+}
+
+.formInput {
+    margin: auto;
+    margin-top: 100px;
+    display: block;
+    background: #555;
+    padding: 100px;
+    width: 50%;
+}
+
+.formInput input {
+    width: 100%;
+}
+
+.formInput input::placeholder {
+    color: red;
+}
+
+.formInput input::selection {
+    color: green;
+    background: hotpink;
+}
+
+.b-before_after::before {
+    content: "Estoy a prendiendo ";
+}
+
+.b-before_after::after {
+    content: " diseñar en CSS";
+}
+
+.div-pseudoclases {
+    width: 200px;
+    height: 200px;
+    background: slateblue;
+
+    transition: background 1s, height 1s, width 1s;
+    /* abreviado luce como */
+    /* transition: all 1s; */
+}
+
+/* .div-pseudoclases:hover {
+    background: darkslateblue;
+    width: 300px;
+    height: 300px;
+} */
+
+/* .div-pseudoclases:link{
+    color: orangered;
+} */
+
+/* .div-pseudoclases:visited{
+    color: palevioletred;
+} */
+
+/* .div-pseudoclases:active{
+    background: blue;
+} */
+
+/* .div-pseudoclases input {
+    position: relative;
+    top: 40px;
+    width: 40%;
+} */
+
+/* .div-pseudoclases input:focus {
+    background: grey;
+} */
+
+/* .div-pseudoclases span:lang(es) {
+    background: red;
+} */
+
+/* .div-objectFit {
+    margin: 25px;
+    width: 300px;
+    height: 400px;
+} */
+
+/* .div-objectFit img {
+    width: 100%;
+    height: 100%;
+    border: 2px solid red;
+    object-fit: cover;
+} */
+
+.div-cursor {
+    margin: 25px;
+    width: 200px;
+    height: 300px;
+    border: 2px solid red;
+    background: pink;
+
+    cursor: pointer;
+}
+
+.div-cursor:active {
+    cursor: row-resize;
+}
+
+
