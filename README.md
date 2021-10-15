@@ -220,7 +220,7 @@ Las siguientes 6 ya no se usan
 **pseudo-elementos:** Son un tipo de elementos pero a diferencia de los reales no forman parte del DOM,
 se pueden ver cambio visuales pero no afectan al DOM
 
-- ::first-line | funcioan en block, primara linea de un texto
+- ::first-line | funciona en block, primara linea de un texto
 - ::first-letter | funcioan en block, primera letra del texto
 - ::placeholder, en los inputs modifica el estilo del placeholder
 - ::after | funciona en hijos - content necesario - son elementos inline
@@ -318,6 +318,72 @@ Lo que se hace en general es SUMAR TODOS LOS FLEX-GROW y dividirlos con el espac
 
 **order:** sirve para posicionar los elementos en base a numeros enteros, entre más alto más al final del cross axis se va
 
+## Grid
+
+Es un estilo de layout y es una propiedad de display. Un grilla es una rejilla o malla cuadrada
+
+**Grid container** es el contenedor con todos los items en la rejilla
+
+- grid-template-rows define la cantidad de filas
+- grid-template-columns define la cantidad de columnas
+
+- unidades auto y fr
+
+- gap separa las grillas entre ellas por una determinada unidad, no toma en cuenta los bordes del container
+
+- grid-column determina cuantas columnas usará una grilla
+```
+    grid-column: 1 / 3; /* Toma de la col-linea 1 a la col-linea 3 */
+    grid-column: 1 / span 3; /* Toma de la col-linea 1 y toma 3 columnas por delante */
+```
+
+- grid-row determina cuantas filas usará una grilla
+
+**Grid item** todos los elementos dentro del container son grid items
+
+**Grid cell** son cada una de las divisiones que componen el grid container
+
+**Grid tracks (columns y rows)** es la suma de filas y columnas en una grilla
+
+**Grid area** es un espacio delimitado por cierta cantidad de grid cells, la única restricción es que las áreas deben de tener
+un espacio reactangular o cuadrado
+
+**Grid line (column lines y row lines)** es la linea que separa columnas y renglones entre cada grilla
+En una grilla de 3x5 hay 4 row lines y 6 column lines
 
 
+**<ins>grid explícito:</ins>** es el grid que se define por el desarrollador
 
+**<ins>grid implícito:</ins>** es el grid que se define cuando la grilla se desborda por no caber en el container
+definido por el desarrollador
+
+**grid-auto-columns:** define el size por defecto de la grilla que sea implícita y sea columna
+
+**grid-auto-row:** define el size por defecto de la grilla que sea implícita y sea row
+
+**grid-auto-flow:** define el comportamiento de la grilla implícita
+
+- dense si se usa la propiedad dense, rellena los espacios que sean huecos entre las grillas
+
+` grid-auto-flow: column; /* por defecto se comporta como row */ `
+
+
+## Gradientes
+
+Para aplicar un gradiente lineal se puede aplicar con el ejemplo siguiente:
+
+background: linear-gradient( to direccion, color_inicial, color_final );
+
+` background: linear-gradient( to bottom, transparent, #333 ); `
+
+## pseudo-clases
+
+Para selecciona un elemento específico por orden, hijo de un container, se usa la pseudo clase **nth-child(child_number)** 
+
+## Funciones
+
+```
+repeat( cantidad, unidad );
+repeat( 3, 150px ); /* repite 3 veces 150px */
+repeat( 2, 10px 20px ); /* repite 2 veces 10px 20px --> 10px 20px 10px 20px */
+```
