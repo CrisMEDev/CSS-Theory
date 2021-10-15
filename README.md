@@ -367,6 +367,43 @@ definido por el desarrollador
 
 ` grid-auto-flow: column; /* por defecto se comporta como row */ `
 
+**<ins>grid dinámico:</ins>** 
+
+Son valores que generalmente se ponen en repeat
+- minmax(cantidad_min, cantidad_max) define la cantidad minima y maxima de una celda se puede usar min-content y max-content
+- min-content se usa para ajustar al tamaño mínimo contenido en una celda
+- max-content se usa para ajustar al tamaño máximo contenido en una celda
+
+Cantidad usado como primer argumento en repeat por ejemplo:
+- auto-fill: genera la cantidad de columnas o filas que cumplan con las propiedades definidas por el estilo
+- auto-fit: auto escala el contenido en la fila o la columna
+
+**<ins>Alineación y control de flujo:</ins>**
+
+Cada celda se comporta como un flex.
+
+Alineación de items en grupo
+*justify-items:* Alinea las celdas en su forma horizontal
+*align-items:* Alinea las celdas en su forma vertical
+
+- stretch es la propiedad que viene por defecto
+- center centra a los elementos
+- start los lleva al principio de la fila o columna
+- end los lleva al final de la fila o columna
+
+Alineación de columnas, además de poder operar con las  porpiedades de los items se agregan las de flex
+*justify-content:* Alinea las filas en su forma horizontal
+*align-content:* Alinea las columnas en su forma vertical
+
+- space-around
+- space-between
+- space-evenly
+
+Aplicado al grid item de manera individual
+- align-self recibe los mismos argumentos que la alineacion grupar pero se aplica sobre el item deseado
+- justify-self recibe los mismos argumentos que la alineacion grupar pero se aplica sobre el item deseado
+- place-self shorthand de las anteriores primero va align y luego justify
+
 
 ## Gradientes
 
