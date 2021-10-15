@@ -404,6 +404,45 @@ Aplicado al grid item de manera individual
 - justify-self recibe los mismos argumentos que la alineacion grupar pero se aplica sobre el item deseado
 - place-self shorthand de las anteriores primero va align y luego justify
 
+**<ins>Grid areas:</ins>**
+En lugar de usar grid-template-rows y grid-template-columns se usa **grid-template-areas**
+para definir el espacio de las secciones en la webpage
+
+**grid-area:** se usa para definir el area a usar por elemento
+
+*line names*
+Para nombrar lineas se usa la sintaxis siguiente
+
+```
+grid-template-rows
+    [first-line]    /* Nombre de la primera linea */
+    150px
+    [second-line]
+    150px
+    [third-line]
+    150px
+```
+
+## RESPONSIVE DESIGN
+
+Su principal objetivo es que el contenido de la aplicación se pueda adaptar a cualquier dispositivo
+
+El responsive design esta basado en estructuras flexibles ( contenedores, imágenes y vídeos )
+
+**@media** se usa en consulta de medios para aplicar diferentes estilos para diferentes tipos / dispositivos de medios
+
+- ancho y alto de la de la ventana gráfica
+- ancho y alto del dispositivo
+- orientacion (portrait o landscape)
+- resolucion
+
+Hay 4 tipos de media querys
+
+- all para todos los dispositivos
+- print destinado para material impreso y vista de documentos previa par ala impresion
+- screen destinado a pantallas
+- speech destinado a sintetizadores de voz
+
 
 ## Gradientes
 
