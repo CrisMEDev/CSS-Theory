@@ -443,6 +443,10 @@ Hay 4 tipos de media querys
 - screen destinado a pantallas
 - speech destinado a sintetizadores de voz
 
+# Transition
+
+Permite realizar transiciones en los elementos. Muestra los frames de diferencia entre un estado y otro
+
 
 ## Gradientes
 
