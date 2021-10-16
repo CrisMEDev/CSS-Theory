@@ -447,6 +447,41 @@ Hay 4 tipos de media querys
 
 Permite realizar transiciones en los elementos. Muestra los frames de diferencia entre un estado y otro
 
+- transition-property (propiedad obligatoria) permite especificar en que propiedades se modificara la visualizacion de la transition
+- transition-duration (propiedad obligatoria) cuanto va a tardar en pasar de un estado a otro
+- transition-delay cuanto tiempo va  a tardar en comenzar la transition cuando se dispara el evento
+- transition-timing-function como actuará la velocidad de la transition (linear|ease|ease in| ease out|step start|initial|inherit|etc...)
+
+## Animations
+
+**@keyframes animationName** es una regla que nos permite crear el comportamiento de una animacion **from** y **to** son el comportamiento inicial y final, en lugar de from y to se pueden usar porcentajes que encapsulen los estilos aplicados
+
+- animation-name es una propiedad para asignar la animación a usar
+- animation-duration
+- animation-timing-function el tipo de duracion que tendrá (ease por defecto)
+    - cubic-bezier(x1, y1, x2, y2) se puede usar las herramientas de navegador para generar la curva facilmente
+- animation-iteration-count cuantas veces se repetira la animación
+- animation-direction el como se comportara la animacion de acuerdo al from, to o porcentajes (reverse, alternate, etc)
+- animation-fill-mode define que estilos tendra al finalizar la animacion dependiendo de los aplicados en from, to o porcentajes, forwards es de las más usadas ya que mantiene el último estado, both arranca con la propiedad al comienzo de la animacion y no la que tenía antes
+
+## Transform
+
+**transform** transforma el elemento de varias maneras
+
+- translate los desplaza
+    - translateX(50px) translada al elemento 50px sobre el eje x, usar porcentaje equivale al tamaño de la caja en su 100%
+    - translateY(50px) translada al elemento 50px sobre el eje y
+    - translate(x, y) shorthand
+
+- scale incrementa o decrementa su tamaño
+    - scale(2) lleva al elemento al doble de su tamaño
+    - scaleX
+    - scaleY
+
+- skew deforma el elemento por una cantidad de grados
+    - skew(30deg)
+
+**clip-path:** se usa para generar formas con las cajas, por lo general hay generadores en linea que facilitan el trabajo
 
 ## Gradientes
 
